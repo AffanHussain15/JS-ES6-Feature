@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS ES6 Feature</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="closure">
+        <h2>Closure</h2>
+        <p>
+          A closure is a function that has access to variables in its outer
+          function, even after the outer function has executed.
+        </p>
+        <code
+          >function outerFunction() { var outerVariable = "Closure"; return
+          function innerFunction() { console.log(outerVariable); }; } var
+          closureExample = outerFunction(); closureExample();
+        </code>
+      </section>
+
+      <section id="destructuring">
+        <h2>Destructuring</h2>
+        <p>
+          Destructuring allows you to unpack values from arrays or properties
+          from objects into distinct variables.
+        </p>
+        <code
+          >const person1 = ['Alice', 25 ]; const [name1, age1 ] = person1;
+          console.log("Destructuring", name1); console.log("Destructuring",
+          age1);
+        </code>
+      </section>
+
+      <section id="default-parameters">
+        <h2>Default Parameters</h2>
+        <p>
+          Default parameters allow you to specify default values for function
+          parameters.
+        </p>
+        <code
+          >function greet(name = 'Guest') { console.log(`Default Parameter:
+          Hello, ${name}!`); } greet(); greet('Alice');
+        </code>
+      </section>
+
+      <section id="rest-parameter">
+        <h2>Rest Parameter</h2>
+        <p>
+          The rest parameter lets a function take any number of arguments and
+          store them in an array.
+        </p>
+        <code
+          >function sum(...numbers) { console.log("Rest Parameter", numbers); }
+          sum(1,2,3,4,5,6);</code
+        >
+      </section>
+
+      <section id="spread-operator">
+        <h2>Spread Operator</h2>
+        <p>
+          The spread operator allows you to expand an array or object into
+          individual elements.
+        </p>
+        <code
+          >const arr1 = [1, 2, 3]; const arr2 = [...arr1, 4, 5];
+          console.log("Spread Operator", arr2);</code
+        >
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
